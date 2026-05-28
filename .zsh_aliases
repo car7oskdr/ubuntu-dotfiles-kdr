@@ -1,0 +1,29 @@
+# ==========================================
+# MIS ALIAS DE ZSH
+# ==========================================
+
+# Aquí puedes añadir todos tus atajos personalizados para comandos largos.
+# Ejemplo: si escribes "actualizar" en la terminal, ejecutará el comando de la derecha.
+
+# --- Actualizaciones del Sistema ---
+alias actualizar="sudo apt update && sudo apt upgrade -y"
+alias limpiar="sudo apt autoremove -y && sudo apt clean"
+
+# --- Navegación Rápida ---
+alias doc="cd ~/Documentos"
+alias des="cd ~/Descargas"
+alias esc="cd ~/Escritorio"
+
+# --- Utilidades Comunes ---
+alias puertos="sudo netstat -tulpn | grep LISTEN"
+alias ip="curl ifconfig.me"
+alias c="clear"
+alias 1="cd .."
+alias v="nvim"
+alias ealias="nvim ~/.zsh_aliases"
+alias kzsh="source ~/.zshrc"
+alias lg="lazygit"
+alias x="exit"
+
+# --- Git Extras (Además de los de Oh My Zsh) ---
+alias glog="git log --oneline --graph --decorate --all"

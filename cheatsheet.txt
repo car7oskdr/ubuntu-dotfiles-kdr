@@ -1,0 +1,69 @@
+======================================================
+         CHEATSHEET DE ATAJOS Y COMANDOS (KDR)
+======================================================
+
+1. WEZTERM (Emulador de Terminal)
+------------------------------------------------------
+* TECLA LÍDER (Leader Key): CTRL + A
+  Para usar los atajos de WezTerm, primero presiona
+  y mantén CTRL+A, luego suelta y presiona la tecla de acción.
+
+[PANELES / SPLITS]
+Leader + |    : Dividir la pantalla verticalmente
+Leader + -    : Dividir la pantalla horizontalmente
+Leader + h    : Moverse al panel de la izquierda
+Leader + j    : Moverse al panel de abajo
+Leader + k    : Moverse al panel de arriba
+Leader + l    : Moverse al panel de la derecha
+CTRL + D      : Cerrar el panel actual (Comando de Zsh)
+
+[PESTAÑAS / TABS]
+Leader + c    : Crear una nueva pestaña
+Leader + n    : Ir a la pestaña siguiente
+Leader + p    : Ir a la pestaña anterior
+
+[OTROS WEZTERM]
+CTRL + SHIFT + R : Recargar la configuración en vivo
+CTRL + SHIFT + L : Abrir la consola de depuración
+
+
+2. ZSH y FZF (La Consola y Buscador)
+------------------------------------------------------
+[NAVEGACIÓN RÁPIDA]
+d             : Muestra el historial de las últimas carpetas. Escribe el número para saltar.
+..            : Sube un directorio (equivale a cd ..)
+...           : Sube dos directorios
+/etc          : Escribir el nombre de una ruta te lleva ahí (no necesitas escribir 'cd')
+
+[MAGIA CON FZF]
+CTRL + R      : Abre el historial interactivo para buscar comandos pasados.
+CTRL + T      : Abre el buscador interactivo para encontrar archivos en la carpeta actual.
+cd ** + TAB   : Abre un menú interactivo para navegar por las carpetas.
+kill ** + TAB : Lista interactiva de procesos para forzar su cierre.
+
+[TRUCOS DE ZSH]
+Flecha Derecha: Acepta la sugerencia en gris pálido (zsh-autosuggestions).
+ESC ESC       : Escribe 'sudo' automáticamente antes del comando anterior (si te faltaron permisos).
+
+
+3. ALIAS PERSONALIZADOS (.zsh_aliases)
+------------------------------------------------------
+actualizar    : sudo apt update && sudo apt upgrade -y
+limpiar       : sudo apt autoremove -y && sudo apt clean
+doc           : cd ~/Documentos
+des           : cd ~/Descargas
+esc           : cd ~/Escritorio
+puertos       : sudo netstat -tulpn | grep LISTEN
+ip            : curl ifconfig.me
+cls           : clear
+glog          : git log --oneline --graph --decorate --all
+
+
+4. ALIAS DE GIT (Plugin Oh My Zsh)
+------------------------------------------------------
+gst           : git status
+gaa           : git add --all
+gco           : git checkout (ej: gco main)
+gcmsg "msg"   : git commit -m "msg"
+gp            : git push
+gl            : git pull
